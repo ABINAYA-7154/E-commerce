@@ -1,0 +1,135 @@
+/* QueryForm.css */
+
+.query-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, white, #03bafc);
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.menu-button {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #03bafc;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  color: #03bafc;
+  margin-bottom: 1.5rem;
+}
+
+.query-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.query-form input,
+.query-form textarea {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: none;
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+  border-color: #03bafc;
+  outline: none;
+  box-shadow: 0 0 4px rgba(3, 186, 252, 0.4);
+}
+
+.query-form button {
+  background-color: #03bafc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.query-form button:hover {
+  background-color: #029ed3;
+}
+
+.query-list {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.query-list h3 {
+  margin-bottom: 1rem;
+  color: #03bafc;
+}
+
+.query-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.query-list li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.query-list li p {
+  margin: 0 0 0.5rem 0;
+}
+
+.query-list label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+}
+
+.query-list input[type="checkbox"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .query-form,
+  .query-list {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .menu-button {
+    font-size: 20px;
+  }
+}

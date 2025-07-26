@@ -1,0 +1,100 @@
+/* Order.css */
+
+.orders-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, white, #03bafc);
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.menu-button {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #03bafc;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  color: #03bafc;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.orders-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.order-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.order-card strong {
+  display: block;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.order-card p {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #444;
+}
+
+.order-items {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.order-items li {
+  margin-bottom: 4px;
+}
+
+.mark-done {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.mark-done input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .orders-page {
+    padding: 1rem;
+  }
+
+  .order-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .menu-button {
+    font-size: 20px;
+  }
+}

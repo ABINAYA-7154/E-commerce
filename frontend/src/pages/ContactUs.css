@@ -1,0 +1,42 @@
+.contact-page {
+  min-height: 100vh;
+  padding: 40px 24px;
+  background: linear-gradient(to right, white, #03bafc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.topbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.contact-page h2 {
+  color: #000000;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.contact-page h3 {
+  color: #333;
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.contact-page p {
+  font-size: 16px;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,95 @@
+/* Dashboard.css */
+
+.dashboard-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, white, #03bafc);
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+.menu-button {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.5rem;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu-button:hover {
+  background-color: #e9ecef;
+}
+
+.center-box {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.center-box h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.admin-section {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.admin-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.design-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.design-list li {
+  padding: 0.75rem 1rem;
+  margin: 0.4rem 0;
+  background: #f1f3f5;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty-state {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 1rem;
+}

@@ -1,0 +1,115 @@
+/* Search.css */
+
+.search-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, white, #03bafc);
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.menu-button {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #03bafc;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  color: #03bafc;
+  margin-bottom: 1.5rem;
+}
+
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+select:focus {
+  border-color: #03bafc;
+  box-shadow: 0 0 4px rgba(3, 186, 252, 0.5);
+}
+
+.empty-state {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 3rem;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.design-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.design-card p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.design-card button {
+  background-color: #03bafc;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.design-card button:hover {
+  background-color: #029ed3;
+}
+
+@media (max-width: 600px) {
+  .design-card img {
+    height: 160px;
+  }
+
+  .menu-button {
+    font-size: 20px;
+  }
+}

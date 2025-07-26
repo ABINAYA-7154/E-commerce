@@ -1,0 +1,155 @@
+.admin-uploads-page {
+  padding: 20px;
+  background: linear-gradient(to right, white, #03bafc);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #666;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.designs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.design-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-5px);
+}
+
+.design-card img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Upload popup */
+.upload-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 30px;
+  background-color: #0091ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 145, 255, 0.4);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 420px;
+}
+
+.popup-box h3 {
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.popup-box input,
+.popup-box textarea,
+.popup-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.popup-buttons button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-buttons button:first-child {
+  background-color: #2e9acc;
+  color: white;
+}
+
+.popup-buttons button:last-child {
+  background-color: #ccc;
+  color: black;
+}
