@@ -1,4 +1,4 @@
-#  Ecommerce Backend
+#  Ecommerce 
 
 Backend engine for a modular ecommerce platform featuring secure authentication, robust image uploads, and clean architecture.
 
